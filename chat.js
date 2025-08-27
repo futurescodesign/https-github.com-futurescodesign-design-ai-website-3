@@ -62,7 +62,7 @@ export default async function handler(req) {
 
   } catch (error) {
     console.error('Error:', error);
-    return new Response(`Error: ${error.message}`, { 
+    return new Response(`Error: ${error.message}`, {
       status: 500,
       headers: {
         'Access-Control-Allow-Origin': '*',
